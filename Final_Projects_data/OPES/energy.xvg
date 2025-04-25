@@ -1,0 +1,37 @@
+# This file was created Thu Apr 24 02:03:14 2025
+# Created by:
+#               :-) GROMACS - gmx energy, 2024.3-plumed_2.9.3 (-:
+# 
+# Executable:   /apps/gromacs/plumed-patched/bin/gmx
+# Data prefix:  /apps/gromacs/plumed-patched
+# Working dir:  /home/smahato/MD25/Final-project/charmm-gui/charmm-gui-4318319006/gromacs/OPES/alanine_dip
+# Command line:
+#   gmx energy -f opes.edr -o energy.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol), (K), (bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+@ s1 legend "Temperature"
+@ s2 legend "Pressure"
+    0.000000  -30395.875000  295.177185   -5.283305
+   10.000000  -30361.640625  311.487396  530.536804
+   20.000000  -30705.105469  301.379883  195.771805
+   30.000000  -30097.339844  298.955627  755.009827
+   40.000000  -30420.646484  295.119873  -187.359238
+   50.000000  -30464.267578  291.944763  -635.140503
+   60.000000  -30598.802734  299.951447  -400.046295
+   70.000000  -30335.160156  298.770203  197.133545
+   80.000000  -30501.439453  307.195496  525.253235
+   90.000000  -30445.660156  301.256836  -447.373138
+  100.000000  -30194.513672  289.852509  989.600891

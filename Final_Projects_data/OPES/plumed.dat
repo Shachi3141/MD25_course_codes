@@ -1,0 +1,17 @@
+# Define the CVs (phi and psi)
+phi: TORSION ATOMS=5,7,9,15
+psi: TORSION ATOMS=7,9,15,17
+
+# Print CVs to file
+PRINT STRIDE=100 ARG=phi,psi FILE=COLVAR
+
+# OPES simulation setup
+opes: OPES_METAD ...
+  ARG=phi,psi
+  PACE=500
+  BARRIER=50
+  STATE_WSTRIDE=1000
+  FILE=KERNELS
+  SIGMA=0.2,0.2
+  TEMP=300
+... OPES_METAD

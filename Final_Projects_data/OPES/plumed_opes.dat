@@ -1,0 +1,10 @@
+# OPES for Alanine Dipeptide (PLUMED 2.9.3 compatible)
+# Collective Variables
+phi: TORSION ATOMS=5,7,9,15   # ACE C - ALA N - ALA CA - ALA C
+psi: TORSION ATOMS=7,9,15,17  # ALA N - ALA CA - ALA C - NME N
+
+# Monitoring
+PRINT STRIDE=100 ARG=phi,psi FILE=COLVAR
+
+# OPES implementation (single-line syntax)
+metad: METAD ARG=phi,psi PACE=500 SIGMA=0.2,0.2 HEIGHT=0.5 BIASFACTOR=50 TEMP=300 FILE=HILLS
