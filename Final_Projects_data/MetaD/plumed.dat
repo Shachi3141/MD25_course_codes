@@ -1,0 +1,9 @@
+# Define dihedral angles for alanine dipeptide
+phi: TORSION ATOMS=5,7,9,15
+psi: TORSION ATOMS=7,9,15,17
+
+# Print dihedrals to a file for scatter plot
+PRINT ARG=phi,psi FILE=phi_psi_data.xvg STRIDE=10
+
+# Metadynamics to generate HILLS file (uncomment if not already done)
+METAD ARG=phi,psi SIGMA=0.1,0.1 HEIGHT=1.2 PACE=500 FILE=HILLS
