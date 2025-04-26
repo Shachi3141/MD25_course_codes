@@ -1,4 +1,4 @@
-Here is the figures all figures of the simulation.
+Here is the figures of the simulation.
 
 # 3D Diagram of Alanine Dipeptide
 
